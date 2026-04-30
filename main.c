@@ -14,7 +14,6 @@ void vigenereDecrypt(char *ciphertext, char *key) {
             int k = tolower(key[j % keyLen]) - 'a';
             int p = (ch - offset - k + 26) % 26;
             ciphertext[i] = p + offset;
-
             j++;
         }
     }
